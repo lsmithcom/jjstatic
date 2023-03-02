@@ -1,0 +1,257 @@
+<head>
+<meta name="title" content="Just Jen homepage"/>
+<link  rel="stylesheet" type="text/css"  media="all" href="css/core.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="css/page.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="css/responsive-design.css" />
+</head>
+
+<body>
+
+<style>
+.step-counter {
+float: right;
+margin-top: -10px;
+font-size: 18px;
+color: #a88dc4;
+font-family: 'Lato', sans-serif;
+}
+
+.shadow-selected {
+box-shadow: 0 0 7px 0 #dea1fe;
+}
+
+.slide:onScreen {
+animation: 3s 1 alternate slidein;}
+
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+
+</style>
+
+
+
+
+<section class="section">
+
+<form id="regForm" action="/action_page.php">
+
+<ul class="li-flex column align-left mwidth-1200">
+
+
+<li class="tabIt">
+<h1 class="center">Start a Shop</h1>
+<p>The process for selling apparel with your logo or design on our site is easy and fast.  Check out the steps below and then click the Get Started button to begin the process.</p>
+<ul class="li-flex two row-wrap pad-10 order-alt-6">
+
+	<li class="center"><img class="slide" src="../image/shop-1.png"   alt="create shop for your logo and designs"></li>
+	<li>
+	<h4 class="start-step">Step 1</h4>
+	<h2 class="start-subtitle">Apply for a Shop</h2>
+	<p>The first step can be completed in less than 5 minutes.  Just click on the Get Started button and answer a few quick questions and you are on your way.</p>
+	</li>
+	<li class="center"><img  class="slide" src="../image/shop-3.png" alt="create shop for your logo and designs"></li>
+	<li>
+	<h4 class="start-step">Step 2</h4>
+	<h2 class="start-subtitle">Get a Quote on Your Custom Design</h2>
+	<p>The next step is to get a quote on your custom design (if you have not already done this).  Go to the Custom section and click on the Get Quote button and upload your graphic, or describe the lettering and we can give you a quote.</p>
+	</li>
+	<li class="center"><img src="../image/shop-2.png"  alt="create shop for your logo and designs"></li>
+	<li>
+	<h4 class="start-step">Step 3</h4>
+	<h2 class="start-subtitle">Launch Your Store and Take Orders</h2>
+	<p>Once you are approved for a shop and have received a custom quote on your designs, we will build the product listings and then send you a link to the completed shop.</p>
+	</li>
+</ul>
+</li>
+
+
+<li class="tabIt">
+<div class="step-counter">Step 1 of 4</div>
+<h2 class="form-title">Will your shop be visible to everyone?</h2>
+
+<div class="box-question">
+<ul class="li-flex two form-shop">
+	<li class="shadow-selected">
+		<h4>Public Shop</h4>
+		<p>A public shop is visible to everyone visiting our site and anyone can order from a public shop.  Most public shops are drop-ship.</p>
+	</li>
+	<li>
+		<h4>Private Shop</h4>
+		<p>A private shop allows you to restrict who can shop and buy your products.  You privode a user name and pasword to your customers to access a private shop. Private shops are also best for group orders.</p>
+	</li>
+</ul>
+</div>
+</li>
+
+
+<li class="tabIt">
+<div class="step-counter">Step 2 of 4</div>
+<h2 class="form-title">How Will Customers Order and Ship?</h2>
+
+<div class="box-question">
+
+<ul class="li-flex three form-shop">
+	<li>
+		<h4>Drop Ship</h4>
+		<p>Drop ship orders are ordered individually, paid for and shipped directly to the customer.  Each order is produced and processed separately, so they arrive based on the date ordered. Since it is less efficient, the cost of drop ship orders is higher, and shipping costs are generally higher.</p>
+	</li>
+	<li>
+		<h4>Group Ship</h4>
+		<p>Your customers select the styles/colors/sizes they want and pay individually, but the order is produced together and shipped to one location. You set the ordering deadline for the group shipment.</p>
+	</li>
+	<li>
+		<h4>Group Pay</h4>
+		<p>Your group members select the styles/colors/sizes they want, but there is one payment and shipment for the order. This is the easy way to collect sizes & colors, but get full wholesale pricing. You set the ordering deadline for the group shipment.</p>
+	</li>
+</ul>
+
+</div>
+</li>
+
+
+<li class="tabIt">
+<div class="step-counter">Step 3 of 4</div>
+<h2 class="form-title">What Quantities Do You Need?</h2>
+
+<div class="box-question">
+<p>How often will you or your customers order?</p>
+
+<ul class="li-flex column li-text-left">
+ <li><label><input name="frequency" required="true" type="radio" value="Once" />Once</label></li>
+ <li><label><input name="frequency" required="true" type="radio" value="couple" />Couple Times a Year</label></li>
+ <li><label><input name="frequency" required="true" type="radio" value="monthly" />Monthly</label></li>
+ <li><label><input name="frequency" required="true" type="radio" value="on-going" />On-going</label></li>
+</ul>
+</div>
+
+<div class="box-question">
+
+<p>What quantity will you order in a year  (best guess)?</p>
+<p><input placeholder="Quantity..." oninput="this.className = ''" name="quantity"></p>
+
+</div>
+</li>
+
+
+<li class="tabIt">
+<div class="step-counter">Step 4 of 4</div>
+<h2 class="form-title">Almost Done.  What is your Contact Info?</h2>
+<section class="section form-top">
+
+</section>
+
+<div class="box-question">
+
+    <p><input placeholder="Name..." oninput="this.className = ''" name="name" class="box-input"></p>
+    <p><input placeholder="email..." oninput="this.className = ''" name="email" class="box-input"></p>
+    <p><input placeholder="Phone (optional)..." oninput="this.className = ''" name="phone" class="box-input"></p>  
+</div>
+</li>
+
+</ul>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" class="bttn bttn-outline" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" class="bttn bttn-solid-purple"  id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+</section>
+
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tabIt");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tabIt");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tabIt");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+</body>

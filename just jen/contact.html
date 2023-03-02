@@ -1,0 +1,140 @@
+<head>
+<meta name="title" content="Just Jen homepage"/>
+<link  rel="stylesheet" type="text/css"  media="all" href="css/core.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="css/page.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="css/responsive-design.css" />
+</head>
+
+<body>
+
+<div class="flex-container height-250 background-ltpink position-relative" >
+<img src="../image/banner-cs.jpg" alt="customer service banner" class="" >
+<div class="banner-container">
+<div class="flex-flex-item-center">
+<h1 class="page-title-center">Contact</h1>
+</div>
+</div>
+</div>
+
+
+<section class="section pad-40t center clearfix">
+
+<p>Need to get in touch with us?  We are here to help.</p>
+
+</section>
+
+
+<section class="section wrapper-flex">
+
+<div class="wrapper-half-column center mobile-pad-40l-40r">
+<div class="wrapper-flex-table contact-box">
+<div class="contact-icon"><img src="/image/icon-phone.png" /></div>
+<div class="contact-text">310-539-6000</div>
+<div class="contact-icon"><img src="image/icon-clock.png" /></div>
+<div class="contact-text">M - F, 9 - 5 PST</div>
+<div class="contact-icon"><img src="../image/icon-email.png" /></div>
+<div class="contact-text">contact@justjen.com</div>
+
+<div class="address">
+<p>Business Address</p>
+<p>1921 N Gaffey Street</p>
+<p>Suite G</p>
+<p>San Pedro, CA 90731</p>
+</div>
+
+</div>
+
+
+</div>
+
+<div class="wrapper-half-column center custom-form-container">
+<div class="wrapper-flex">
+<form class="form contact"
+      action="https://justjen.net/contact/index/post/"
+      id="contact-form"
+      method="post"
+      data-hasrequired="&#x2A;&#x20;Required&#x20;Fields"
+      data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <legend class="legend"><span>Write Us</span></legend><br />
+        <div class="field note no-label">
+            Jot us a note and we’ll get back to you as quickly as possible.        </div>
+        <div class="field name required">
+            <label class="label" for="name"><span>Name</span></label>
+            <div class="control">
+                <input name="name"
+                       id="name"
+                       title="Name"
+                       value=""
+                       class="input-text"
+                       type="text"
+                       data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="email"><span>Email</span></label>
+            <div class="control">
+                <input name="email"
+                       id="email"
+                       title="Email"
+                       value=""
+                       class="input-text"
+                       type="email"
+                       data-validate="{required:true, 'validate-email':true}"
+                       data-mage-init='{"mage/trim-input":{}}'
+                />
+            </div>
+        </div>
+        <div class="field telephone">
+            <label class="label" for="telephone"><span>Phone Number</span></label>
+            <div class="control">
+                <input name="telephone"
+                       id="telephone"
+                       title="Phone&#x20;Number"
+                       value=""
+                       class="input-text"
+                       type="tel" />
+            </div>
+        </div>
+        <div class="field comment required">
+            <label class="label" for="comment">
+                <span>What’s on your mind?</span>
+            </label>
+            <div class="control">
+                <textarea name="comment"
+                          id="comment"
+                          title="What&#x2019;s&#x20;on&#x20;your&#x20;mind&#x3F;"
+                          class="input-text"
+                          cols="5"
+                          rows="3"
+                          data-validate="{required:true}"
+                ></textarea>
+            </div>
+        </div>
+            </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="Submit" class="action submit primary">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/block-submit-on-send": {
+                "formId": "contact-form"
+            }
+        }
+    }
+</script>
+
+
+</div>
+</div>
+
+</section></div></div>
+
+</body>
